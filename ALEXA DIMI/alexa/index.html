@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Natan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="backgroundMusic" loop>
+        <source src="asset/music/Bergema Sampai Selamanya - Nadhif Basalamah _ Lirik Lagu.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Loading Screen -->
+    <div id="loading" class="loading-screen">
+        <div class="loading-content">
+            <div class="heart-loader"></div>
+            <p>Membuat sesuatu yang special untukmu...</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="mainContent" class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <h1 class="title">For Natan♡</h1>
+                <p class="subtitle">Dengan cinta yang tak terbatas</p>
+            </div>
+        </header>
+
+        <!-- Music Control -->
+        <div class="music-control">
+            <button id="musicToggle" class="music-btn">
+                <i class="fas fa-music"></i>
+                <span>Putar Musik</span>
+            </button>
+            <div class="music-selector">
+                <select id="musicSelect">
+                    <option value="asset/music/Bergema Sampai Selamanya - Nadhif Basalamah _ Lirik Lagu.mp3">Bergema Sampai Selamanya</option>
+                    <option value="asset/music/Daun Jatuh - Resah Jadi Luka (Lyric Video).mp3">Daun Jatuh - Resah Jadi Luka</option>
+                    <option value="asset/music/Mangu - Fourtwnty (Lyrics).mp3">Mangu - Fourtwnty</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="photo-gallery">
+                        <div class="photo-frame">
+                            <img src="asset/dimihatsApp Image 2025-12-19 at 21.55.00.jpeg" alt="Foto kita" class="photo">
+                            <div class="photo-frame-decoration"></div>
+                        </div>
+                    </div>
+                    <div class="love-message">
+                        <h2 class="message-title">Hi Cantikku</h2>
+                        <div class="message-content">
+                            <p class="message-line">Setiap hari bersamamu adalah anugerah yang luar biasa</p>
+                            <p class="message-line">Kamu adalah cahaya yang menerangi duniaku</p>
+                            <p class="message-line">Denganmu, aku merasa menemukan rumah dihatiku</p>
+                            <p class="message-line">Terima kasih telah menjadi bagian terbaik dalam hidupku</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Love Timeline -->
+        <section class="timeline">
+            <div class="container">
+                <h2 class="section-title">Perjalanan Cinta Kita</h2>
+                <div class="timeline-container">
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-content">
+                            <h3>Bertemu</h3>
+                            <p>Momen spesial ketika aku menjemputmu pulang dan kita bertemu lagi</p>
+                        </div>
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="timeline-content">
+                            <h3>Pertama Kali Berbicara</h3>
+                            <p>Saat aku Menelponmu</p>
+                        </div>
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="timeline-content">
+                            <h3>Pertama Kali Bersama</h3>
+                            <p>Saat kita memutuskan untuk memulai perjalanan ini tanggal 3-11-2025</p>
+                        </div>
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="600">
+                        <div class="timeline-content">
+                            <h3>Kini & Selamanya</h3>
+                            <p>Masih banyak momen indah yang akan kita ciptakan bersama</p>
+                        </div>
+                        <div class="timeline-dot"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Gallery -->
+        <section class="gallery">
+            <div class="container">
+                <h2 class="section-title">Koleksi Foto Kita</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item" onclick="openModal(this)">
+                        <img src="asset/dimihatsApp Image 2025-12-19 at 21.55.00.jpeg" alt="Foto kita 1">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openModal(this)">
+                        <img src="asset/dimihatsApp Image 2025-12-19 at 21.55.01.jpeg" alt="Foto kita 2">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openModal(this)">
+                        <img src="asset/dimihatsApp Image 2025-12-19 at 21.55.01 (1).jpeg" alt="Foto kita 3">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openModal(this)">
+                        <img src="asset/dimihatsApp Image 2025-12-19 at 21.55.02.jpeg" alt="Foto kita 4">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Love Letters -->
+        <section class="love-letters">
+            <div class="container">
+                <h2 class="section-title">Surat Cinta Untukmu</h2>
+                <div class="letters-container">
+                    <div class="letter" onclick="openLetter(1)">
+                        <div class="letter-content">
+                            <h3>Surat Pertama</h3>
+                            <p>Ketika aku pertama kali bertemu denganmu...</p>
+                        </div>
+                    </div>
+                    <div class="letter" onclick="openLetter(2)">
+                        <div class="letter-content">
+                            <h3>Surat Kedua</h3>
+                            <p>Kamu yang membuat hari-hariku berwarna...</p>
+                        </div>
+                    </div>
+                    <div class="letter" onclick="openLetter(3)">
+                        <div class="letter-content">
+                            <h3>Surat Ketiga</h3>
+                            <p>Masa depan yang ingin aku capai bersamamu...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>Dibuat dengan ♡ ︎ khusus untukmu</p>
+                <p>Selamat hari jadi kita yang ke-47! 🎉</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal for Photos -->
+    <div id="photoModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div class="modal-caption" id="modalCaption"></div>
+    </div>
+
+    <!-- Modal for Letters -->
+    <div id="letterModal" class="modal letter-modal">
+        <span class="close" onclick="closeLetterModal()">&times;</span>
+        <div class="modal-content letter-content-modal">
+            <h2 id="letterTitle"></h2>
+            <div id="letterText"></div>
+        </div>
+    </div>
+
+    <!-- Floating Hearts -->
+    <div class="floating-hearts">
+        <div class="heart">💕</div>
+        <div class="heart">❤️</div>
+        <div class="heart">💖</div>
+        <div class="heart">💗</div>
+        <div class="heart">💝</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
